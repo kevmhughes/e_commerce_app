@@ -1,9 +1,8 @@
-import React from "react"
-import "./Product.scss"
+import React from 'react'
 
 const Product = () => {
   return (
-    <div className="product">Product</div>
+    <div className='product'>Product</div>
   )
 }
 
