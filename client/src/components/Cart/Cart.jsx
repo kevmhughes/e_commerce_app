@@ -31,7 +31,7 @@ const Cart = () => {
     <div className='cart'>
         <h1>Products in your cart</h1>
         {data?.map(item => (
-            <div className='item' key={item.id}>
+            <dnoiv className='item' key={item.id}>
                 <img src={item.img} alt="fashion" />
                 <div className="details">
                     <h1>{item.title}</h1>
@@ -39,7 +39,7 @@ const Cart = () => {
                     <div className="price">1 x ${item.price}</div>
                 </div>
                 <DeleteOutlineIcon className='delete' />
-            </div>
+            </dnoiv>
         ))}
 
         <div className="total">
