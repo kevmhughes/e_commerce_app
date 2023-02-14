@@ -7,11 +7,13 @@ import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import Cart from '../Cart/Cart';
 import { Link } from "react-router-dom";
 import "./Navbar.scss"
+import { useSelector } from 'react-redux';
 
 
 const Navbar = () => {
 
   const [open, setOpen] = useState(false)
+  const products = useSelector((state) => state.cart.products)
 
   return (
     <div className='navbar'>
@@ -57,7 +59,7 @@ const Navbar = () => {
           <FavoriteBorderIcon />
           <div className="cartIcon">
             <ShoppingCartCheckoutIcon onClick={() => setOpen(!open)} />
-            <span>0</span>
+            <span>{products.length}</span>
           </div>
         </div>
         </div>
