@@ -45,7 +45,7 @@ const Product = () => {
       </div>
       <div className="right">
         <h1>{data?.attributes?.title}</h1>
-        <span className='price'>${data?.attributes?.price}</span>
+        <span className='price'>€{data?.attributes?.price}</span>
         <p>{data?.attributes?.desc}</p>
           <div className="quantity">
             <button onClick={() => setQuantity(prev => (prev === 1 ? 1 : prev - 1))}>-</button>

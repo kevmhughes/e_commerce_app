@@ -23,7 +23,7 @@ try {
             return {
                 price_data: {
                     // change currency here as desired
-                    currency: "usd",
+                    currency: "eur",
                     product_data: {
                         name: item.title,
                     },
@@ -35,7 +35,7 @@ try {
     );
 
         const session = await stripe.checkout.sessions.create({
-            shipping_address_collection: {allowed_countries: ['US', 'CA']},
+            shipping_address_collection: {allowed_countries: ['ES', 'GB', 'PT']},
             payment_method_types: ["card"],
             mode: "payment",
             success_url: process.env.CLIENT_URL+"?success=true",
