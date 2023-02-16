@@ -37,7 +37,7 @@ const Categories = () => {
           />
           <button>
             <Link to="/products/1" className="link">
-              New Season
+              Sale
             </Link>
           </button>
         </div>
@@ -52,7 +52,7 @@ const Categories = () => {
               />
               <button>
                 <Link to="/products/1" className="link">
-                  Sale
+                  New Season
                 </Link>
               </button>
             </div>
